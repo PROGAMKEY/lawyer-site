@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scales Injustice | Criminal Defense Attorney | Waldorf, MD</title>
+  <meta name="description" content="Experienced criminal defense attorney Sam Scales. Former DOJ prosecutor turned public defender. Free consultations. Waldorf, Maryland.">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #0a1628;
+      --navy-light: #0e1f38;
+      --navy-mid: #162440;
+      --blue: #1870BD;
+      --blue-light: #208AE7;
+      --blue-dark: #0c487d;
+      --blue-darkest: #063258;
+      --white: #ffffff;
+      --gray-100: #f6f6f6;
+      --gray-200: #e2e2e2;
+      --gray-400: #a4a4a4;
+      --gray-600: #5e5e5e;
+      --text-dark: #1b1b1b;
+      --text-mid: #474747;
+      --font-heading: 'Libre Baskerville', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--gray-600);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1.25rem 0;
+      transition: all 0.35s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(10, 22, 40, 0.97);
+      backdrop-filter: blur(12px);
+      padding: 0.75rem 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-logo span { color: var(--blue); }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--blue); }
+
+    .nav-cta {
+      background: var(--blue) !important;
+      color: var(--white) !important;
+      padding: 0.625rem 1.5rem;
+      border-radius: 2px;
+      font-weight: 600 !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--blue-light) !important; }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      margin: 5px 0;
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--navy);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(24, 112, 189, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(24, 112, 189, 0.1) 0%, transparent 50%);
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 8rem 2rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(24, 112, 189, 0.1);
+      border: 1px solid rgba(24, 112, 189, 0.25);
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--blue-light);
+    }
+
+    .hero-text {
+      font-size: 1.125rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 500px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 2px;
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(24, 112, 189, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 2px;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 2rem;
+      border-radius: 2px;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 2.75rem;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 7rem 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--blue);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      color: var(--text-dark);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* ── ABOUT ── */
+    .about { background: var(--white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      margin-top: 3.5rem;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image-block {
+      width: 100%;
+      aspect-ratio: 4/5;
+      background: var(--navy);
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-image-block::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(24, 112, 189, 0.08), transparent 60%);
+      pointer-events: none;
+    }
+
+    .scales-svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      height: auto;
+    }
+
+    .about-image-accent {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      width: 60%;
+      height: 60%;
+      border: 2px solid var(--blue);
+      border-radius: 2px;
+      z-index: -1;
+    }
+
+    .about-body h3 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--text-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .about-body p {
+      margin-bottom: 1.25rem;
+      line-height: 1.8;
+    }
+
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .highlight {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: var(--gray-100);
+      border-radius: 2px;
+    }
+
+    .highlight-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--blue);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .highlight-text {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--gray-100); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 2px;
+      border: 1px solid var(--gray-200);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--blue);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(10, 22, 40, 0.08);
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(24, 112, 189, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+      color: var(--blue);
+    }
+
+    .service-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--text-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      font-size: 0.925rem;
+      line-height: 1.7;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials { background: var(--navy); }
+
+    .testimonials .section-title { color: var(--white); }
+    .testimonials .section-subtitle { color: rgba(255,255,255,0.5); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .testimonial-card {
+      background: var(--navy-light);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 2.5rem;
+      border-radius: 2px;
+      position: relative;
+    }
+
+    .testimonial-quote {
+      font-size: 2rem;
+      color: var(--blue);
+      font-family: var(--font-heading);
+      line-height: 1;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+
+    .testimonial-card p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--navy-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--blue);
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .testimonial-detail {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .stars {
+      color: var(--blue);
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 3.5rem;
+    }
+
+    .contact-info-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--gray-100);
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      flex-shrink: 0;
+      color: var(--white);
+    }
+
+    .contact-info-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray-400);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-info-value {
+      font-weight: 600;
+      color: var(--text-dark);
+      font-size: 0.95rem;
+    }
+
+    .contact-info-value a {
+      color: var(--text-dark);
+      text-decoration: none;
+    }
+
+    .contact-info-value a:hover {
+      color: var(--blue);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group { display: flex; flex-direction: column; }
+
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.875rem 1rem;
+      border: 1px solid var(--gray-200);
+      border-radius: 2px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      background: var(--white);
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .form-submit {
+      background: var(--blue);
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 2px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s;
+      letter-spacing: 0.02em;
+      align-self: flex-start;
+    }
+
+    .form-submit:hover {
+      background: var(--blue-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(10, 22, 40, 0.25);
+    }
+
+    /* ── BOOKING / CALENDLY ── */
+    .booking {
+      background: var(--navy);
+    }
+
+    .booking .section-title { color: var(--white); }
+    .booking .section-subtitle { color: rgba(255,255,255,0.5); }
+
+    .booking-header { text-align: center; margin-bottom: 2rem; }
+    .booking-header .section-subtitle { margin: 0 auto; }
+
+    .calendly-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 2px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: var(--blue);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta-banner h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-banner p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-banner .btn-primary {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .cta-banner .btn-primary:hover {
+      background: var(--navy-light);
+      box-shadow: 0 4px 20px rgba(10, 22, 40, 0.3);
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--navy);
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+
+    .footer h4 {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer ul { list-style: none; }
+
+    .footer ul li { margin-bottom: 0.75rem; }
+
+    .footer ul a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+
+    .footer ul a:hover { color: var(--blue); }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero-content { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-stats { grid-template-columns: repeat(4, 1fr); }
+      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .about-image { max-width: 400px; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+
+      .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        padding: 1.5rem 2rem;
+        gap: 1rem;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+      .about-highlights { grid-template-columns: 1fr; }
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Scales<span>.</span> Injustice</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Results</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#booking" class="nav-cta">Book a Call</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Criminal Defense Attorney
+        </div>
+        <h1>Balancing the Scales of <em>Injustice</em></h1>
+        <p class="hero-text">Former Department of Justice prosecutor turned fierce public defender. When the full weight of the federal government comes down on you, you need someone who knows how they operate &mdash; from the inside.</p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">Get Your Free Consultation &rarr;</a>
+          <a href="tel:5714838940" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (571) 483-8940
+          </a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card fade-up">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Cases Handled</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-number">DOJ</div>
+          <div class="stat-label">Former Prosecutor</div>
+        </div>
+        <div class="stat-card fade-up">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Client Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">About Sam Scales</div>
+      <div class="section-title">An Attorney Who Knows<br>Both Sides of the Courtroom</div>
+      <div class="about-grid">
+        <div class="about-image fade-up">
+          <div class="about-image-block">
+            <svg class="scales-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#c9b97a"/>
+                  <stop offset="30%" stop-color="#e8d9a0"/>
+                  <stop offset="50%" stop-color="#f5ecc8"/>
+                  <stop offset="70%" stop-color="#e8d9a0"/>
+                  <stop offset="100%" stop-color="#b8a465"/>
+                </linearGradient>
+                <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a08940"/>
+                  <stop offset="50%" stop-color="#c9b97a"/>
+                  <stop offset="100%" stop-color="#8a7535"/>
+                </linearGradient>
+                <linearGradient id="goldHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f5ecc8"/>
+                  <stop offset="100%" stop-color="#d4c48a"/>
+                </linearGradient>
+                <linearGradient id="chainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#e8d9a0"/>
+                  <stop offset="50%" stop-color="#c9b97a"/>
+                  <stop offset="100%" stop-color="#a08940"/>
+                </linearGradient>
+                <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+                </filter>
+                <filter id="innerGlow">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+                  <feOffset dx="0" dy="1" result="offsetBlur"/>
+                  <feFlood flood-color="#f5ecc8" flood-opacity="0.3"/>
+                  <feComposite in2="offsetBlur" operator="in"/>
+                  <feMerge>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Background subtle radial -->
+              <radialGradient id="bgGlow" cx="50%" cy="40%" r="50%">
+                <stop offset="0%" stop-color="#1870BD" stop-opacity="0.08"/>
+                <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
+              </radialGradient>
+              <rect width="400" height="500" fill="url(#bgGlow)"/>
+
+              <!-- Central pillar -->
+              <rect x="194" y="120" width="12" height="300" rx="2" fill="url(#goldDark)" filter="url(#softShadow)"/>
+              <!-- Pillar highlight -->
+              <rect x="196" y="120" width="4" height="300" rx="1" fill="url(#goldHighlight)" opacity="0.4"/>
+
+              <!-- Base -->
+              <path d="M140 420 L200 395 L260 420 L260 435 Q260 445 250 445 L150 445 Q140 445 140 435 Z" fill="url(#goldSheen)" filter="url(#softShadow)"/>
+              <path d="M150 420 L200 400 L250 420" fill="none" stroke="#f5ecc8" stroke-width="0.5" opacity="0.5"/>
+              <!-- Base decorative line -->
+              <line x1="155" y1="435" x2="245" y2="435" stroke="#a08940" stroke-width="0.75" opacity="0.5"/>
+
+              <!-- Top ornament - sphere -->
+              <circle cx="200" cy="108" r="14" fill="url(#goldSheen)" filter="url(#softShadow)"/>
+              <circle cx="195" cy="104" r="4" fill="#f5ecc8" opacity="0.4"/>
+              <!-- Small crown detail -->
+              <path d="M188 95 L192 88 L196 93 L200 85 L204 93 L208 88 L212 95" fill="none" stroke="url(#goldHighlight)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#innerGlow)"/>
+
+              <!-- Crossbeam - slightly tilted for visual interest -->
+              <line x1="68" y1="138" x2="332" y2="128" stroke="url(#goldSheen)" stroke-width="6" stroke-linecap="round" filter="url(#softShadow)"/>
+              <!-- Crossbeam highlight -->
+              <line x1="70" y1="136" x2="330" y2="126" stroke="#f5ecc8" stroke-width="1" opacity="0.3"/>
+
+              <!-- Left chains -->
+              <g stroke="url(#chainGrad)" stroke-width="1.5" fill="none" opacity="0.9">
+                <path d="M68 140 Q65 155 68 170"/>
+                <path d="M68 165 Q71 180 68 195"/>
+                <path d="M68 190 Q65 205 68 220"/>
+              </g>
+              <!-- Left chain - outer left -->
+              <g stroke="url(#chainGrad)" stroke-width="1.2" fill="none" opacity="0.7">
+                <path d="M42 195 Q39 208 42 220"/>
+                <path d="M42 215 Q45 228 42 240"/>
+              </g>
+              <!-- Left chain - outer right -->
+              <g stroke="url(#chainGrad)" stroke-width="1.2" fill="none" opacity="0.7">
+                <path d="M94 195 Q91 208 94 220"/>
+                <path d="M94 215 Q97 228 94 240"/>
+              </g>
+              <!-- Left tray support strings -->
+              <line x1="68" y1="220" x2="42" y2="245" stroke="url(#chainGrad)" stroke-width="1.2" opacity="0.7"/>
+              <line x1="68" y1="220" x2="94" y2="245" stroke="url(#chainGrad)" stroke-width="1.2" opacity="0.7"/>
+              <line x1="68" y1="220" x2="68" y2="248" stroke="url(#chainGrad)" stroke-width="1.2" opacity="0.7"/>
+
+              <!-- Left pan/tray -->
+              <ellipse cx="68" cy="255" rx="52" ry="12" fill="url(#goldSheen)" filter="url(#softShadow)"/>
+              <ellipse cx="68" cy="253" rx="46" ry="9" fill="url(#goldDark)" opacity="0.3"/>
+              <ellipse cx="68" cy="251" rx="38" ry="6" fill="url(#goldHighlight)" opacity="0.15"/>
+              <!-- Tray rim highlight -->
+              <ellipse cx="68" cy="255" rx="52" ry="12" fill="none" stroke="#f5ecc8" stroke-width="0.5" opacity="0.4"/>
+
+              <!-- Right chains -->
+              <g stroke="url(#chainGrad)" stroke-width="1.5" fill="none" opacity="0.9">
+                <path d="M332 130 Q329 145 332 160"/>
+                <path d="M332 155 Q335 170 332 185"/>
+                <path d="M332 180 Q329 195 332 210"/>
+              </g>
+              <!-- Right chain - outer left -->
+              <g stroke="url(#chainGrad)" stroke-width="1.2" fill="none" opacity="0.7">
+                <path d="M306 185 Q303 198 306 210"/>
+                <path d="M306 205 Q309 218 306 230"/>
+              </g>
+              <!-- Right chain - outer right -->
+              <g stroke="url(#chainGrad)" stroke-width="1.2" fill="none" opacity="0.7">
+                <path d="M358 185 Q355 198 358 210"/>
+                <path d="M358 205 Q361 218 358 230"/>
+              </g>
+              <!-- Right tray support strings -->
+              <line x1="332" y1="210" x2="306" y2="235" stroke="url(#chainGrad)" stroke-width="1.2" opacity="0.7"/>
+              <line x1="332" y1="210" x2="358" y2="235" stroke="url(#chainGrad)" stroke-width="1.2" opacity="0.7"/>
+              <line x1="332" y1="210" x2="332" y2="238" stroke="url(#chainGrad)" stroke-width="1.2" opacity="0.7"/>
+
+              <!-- Right pan/tray -->
+              <ellipse cx="332" cy="245" rx="52" ry="12" fill="url(#goldSheen)" filter="url(#softShadow)"/>
+              <ellipse cx="332" cy="243" rx="46" ry="9" fill="url(#goldDark)" opacity="0.3"/>
+              <ellipse cx="332" cy="241" rx="38" ry="6" fill="url(#goldHighlight)" opacity="0.15"/>
+              <ellipse cx="332" cy="245" rx="52" ry="12" fill="none" stroke="#f5ecc8" stroke-width="0.5" opacity="0.4"/>
+
+              <!-- Decorative engravings on pillar -->
+              <g opacity="0.25" stroke="#f5ecc8" stroke-width="0.75" fill="none">
+                <path d="M196 160 Q200 155 204 160 Q200 165 196 160"/>
+                <path d="M196 200 Q200 195 204 200 Q200 205 196 200"/>
+                <path d="M196 240 Q200 235 204 240 Q200 245 196 240"/>
+                <path d="M196 280 Q200 275 204 280 Q200 285 196 280"/>
+                <path d="M196 320 Q200 315 204 320 Q200 325 196 320"/>
+                <path d="M196 360 Q200 355 204 360 Q200 365 196 360"/>
+              </g>
+
+              <!-- "JUSTITIA" text arc on base -->
+              <text x="200" y="442" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#a08940" letter-spacing="4" opacity="0.5">JUSTITIA</text>
+
+            </svg>
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-body fade-up">
+          <h3>Distinguished Background in Federal Law</h3>
+          <p>Sam Scales is an experienced attorney with a distinguished background in both the Department of Justice and public defense. This rare combination means he understands exactly how federal prosecutors build their cases &mdash; and how to dismantle them.</p>
+          <p>His practice focuses on protecting constitutional rights through complex federal litigation, employment matters, and regulatory cases. Every client receives the aggressive, strategic defense they deserve.</p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="highlight-text">Department of Justice Experience</span>
+            </div>
+            <div class="highlight">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="highlight-text">Public Defense Background</span>
+            </div>
+            <div class="highlight">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="highlight-text">Federal Litigation Expert</span>
+            </div>
+            <div class="highlight">
+              <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="highlight-text">Constitutional Rights Advocate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-label">Practice Areas</div>
+      <div class="section-title">How We Fight For You</div>
+      <div class="section-subtitle">Strategic, aggressive representation backed by insider knowledge of how the federal system works.</div>
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Criminal Defense</h3>
+          <p>Aggressive defense against federal and state criminal charges. From investigation through trial, we fight to protect your freedom, your record, and your future.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Federal Employment</h3>
+          <p>Protecting federal employees facing adverse actions, security clearance issues, whistleblower retaliation, and discrimination claims within government agencies.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Regulatory Matters</h3>
+          <p>Navigating complex regulatory investigations, compliance issues, and administrative proceedings with precision and a deep understanding of federal process.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Federal Litigation</h3>
+          <p>Complex civil and criminal federal cases demanding deep knowledge of federal rules, procedures, and courthouse culture that only comes from years of practice.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Constitutional Rights</h3>
+          <p>Zealous advocacy for your fundamental rights. When the government oversteps, we hold them accountable and fight to preserve the protections you are guaranteed.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Appeals</h3>
+          <p>When the trial court gets it wrong, we take the fight to the next level. Thorough appellate briefing and oral advocacy to overturn unjust outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-label">Client Stories</div>
+      <div class="section-title">Faces of Justice</div>
+      <div class="section-subtitle">Real reviews from real clients whose lives were on the line.</div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-quote">&ldquo;</div>
+          <p>Sam didn't just defend me &mdash; he fought for me like my life depended on it. Because it did. His knowledge of how federal prosecutors think gave us an edge no other attorney could have provided.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M.R.</div>
+            <div>
+              <div class="testimonial-name">M. Robinson</div>
+              <div class="testimonial-detail">Federal Criminal Defense Client</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-quote">&ldquo;</div>
+          <p>After being wrongfully terminated from my federal position, Sam navigated the complex appeals process and got my job back. His experience with government agencies was invaluable.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">D.T.</div>
+            <div>
+              <div class="testimonial-name">D. Thompson</div>
+              <div class="testimonial-detail">Federal Employment Client</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-quote">&ldquo;</div>
+          <p>The professionalism and dedication Sam showed throughout my case was extraordinary. He kept me informed at every step and the outcome exceeded all expectations. Truly the best.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">J.W.</div>
+            <div>
+              <div class="testimonial-name">J. Williams</div>
+              <div class="testimonial-detail">Regulatory Defense Client</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <!-- BOOK A CALL (Calendly) -->
+  <section class="section booking" id="booking">
+    <div class="container">
+      <div class="booking-header fade-up">
+        <div class="section-label">Schedule a Call</div>
+        <div class="section-title">Book Your Free Consultation</div>
+        <div class="section-subtitle">Pick a time that works for you. Your consultation is free, confidential, and comes with no obligation.</div>
+      </div>
+      <div class="calendly-wrapper fade-up">
+        <!-- CALENDLY EMBED: Replace YOUR_CALENDLY_URL with your actual Calendly link -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_URL?hide_gdpr_banner=1&background_color=0a1628&text_color=f6f6f6&primary_color=1870bd" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Your Future Is Worth Fighting For</h2>
+      <p>Don't face the federal government alone. Schedule a free, confidential consultation today.</p>
+      <a href="#booking" class="btn btn-primary">Book a Call Now &rarr;</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <div class="section-title">Contact Us Directly</div>
+      <div class="section-subtitle">Prefer to reach out another way? Send us a message or call the office.</div>
+      <div class="contact-grid">
+        <div class="fade-up">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value"><a href="tel:5714838940">(571) 483-8940</a></div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><a href="mailto:sam@scalesinjustice.com">sam@scalesinjustice.com</a></div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Office</div>
+              <div class="contact-info-value">173 Saint Patricks Drive<br>STE104 #3096<br>Waldorf, Maryland 20603</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Hours</div>
+              <div class="contact-info-value">Monday &ndash; Friday<br>7:00 AM &ndash; 6:00 PM</div>
+            </div>
+          </div>
+          <a href="#booking" class="btn btn-primary" style="margin-top:1rem;width:100%;justify-content:center;">Book a Call Instead &rarr;</a>
+        </div>
+        <!-- FORM: Replace ACTION URL with your Formspree endpoint (https://formspree.io) or GoDaddy form handler -->
+        <form class="contact-form fade-up" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New Case Inquiry - Scales Injustice Website">
+          <input type="hidden" name="_next" value="https://scalesinjustice.com/#contact">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="caseType">Case Type</label>
+            <select id="caseType" name="caseType">
+              <option value="">Select a practice area...</option>
+              <option value="criminal">Criminal Defense</option>
+              <option value="employment">Federal Employment</option>
+              <option value="regulatory">Regulatory Matters</option>
+              <option value="litigation">Federal Litigation</option>
+              <option value="constitutional">Constitutional Rights</option>
+              <option value="appeals">Appeals</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Case</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your situation and how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">Scales<span>.</span> Injustice</a>
+        <p>Balancing the Scales of Injustice. Experienced criminal defense and federal litigation from a former DOJ prosecutor.</p>
+      </div>
+      <div>
+        <h4>Practice Areas</h4>
+        <ul>
+          <li><a href="#services">Criminal Defense</a></li>
+          <li><a href="#services">Federal Employment</a></li>
+          <li><a href="#services">Regulatory Matters</a></li>
+          <li><a href="#services">Appeals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Client Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="tel:5714838940">Call Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:5714838940">(571) 483-8940</a></li>
+          <li><a href="mailto:sam@scalesinjustice.com">sam@scalesinjustice.com</a></li>
+          <li><a href="#">Waldorf, MD 20603</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Scales Injustice. All rights reserved.</span>
+      <span>Attorney Advertising. Prior results do not guarantee a similar outcome.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Calendly popup fallback for mobile CTAs
+    function openCalendly(e) {
+      if (typeof Calendly !== 'undefined') {
+        e.preventDefault();
+        Calendly.initPopupWidget({url: 'https://calendly.com/YOUR_CALENDLY_URL?hide_gdpr_banner=1&background_color=0a1628&text_color=f6f6f6&primary_color=1870bd'});
+      }
+    }
+  </script>
+
+</body>
+</html>
