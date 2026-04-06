@@ -1,0 +1,22 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#e8d9a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#gold)"/>
+  <rect x="0" y="626" width="1200" height="4" fill="url(#gold)"/>
+  <text x="600" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#ffffff">Scales <tspan fill="#c9a84c">in</tspan> Justice</text>
+  <text x="600" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.7)" letter-spacing="6">CRIMINAL DEFENSE ATTORNEY</text>
+  <line x1="480" y1="320" x2="720" y2="320" stroke="#c9a84c" stroke-width="2"/>
+  <text x="600" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.6)">Former Department of Justice Employee</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.6)">Criminal Defense | Family Law | Juvenile Defense</text>
+  <text x="600" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#c9a84c">Largo &amp; Upper Marlboro, Maryland | (571) 483-8940</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.4)">FREE CONSULTATIONS AVAILABLE</text>
+</svg>

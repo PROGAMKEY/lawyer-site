@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://progamkey.github.io/lawyer-site/sitemap.xml
