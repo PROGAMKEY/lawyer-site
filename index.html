@@ -85,7 +85,7 @@
         "@type": "Review",
         "reviewRating": {"@type": "Rating", "ratingValue": "5"},
         "author": {"@type": "Person", "name": "D. Marshall"},
-        "reviewBody": "The charges were reduced to a misdemeanor and I avoided prison entirely. He is the criminal defense attorney in Largo, MD you want in your corner."
+        "reviewBody": "The charges were reduced to a misdemeanor and I avoided prison entirely. He is the criminal defense attorney you want in your corner."
       },
       {
         "@type": "Review",
@@ -682,21 +682,21 @@
     .contact-info-row {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
+      gap: 0.75rem;
     }
 
     .contact-info-card {
       display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      padding: 1.25rem;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
       background: var(--gray-100);
       border-radius: 2px;
     }
 
     .contact-info-icon {
-      width: 44px;
-      height: 44px;
+      width: 36px;
+      height: 36px;
       background: var(--blue);
       display: flex;
       align-items: center;
@@ -706,19 +706,25 @@
       color: var(--white);
     }
 
+    .contact-info-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
     .contact-info-label {
-      font-size: 0.75rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--gray-400);
       font-weight: 600;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.15rem;
     }
 
     .contact-info-value {
       font-weight: 600;
       color: var(--text-dark);
-      font-size: 0.95rem;
+      font-size: 0.85rem;
+      line-height: 1.3;
     }
 
     .contact-info-value a {
@@ -728,6 +734,16 @@
 
     .contact-info-value a:hover {
       color: var(--blue);
+    }
+
+    a.contact-info-card {
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    a.contact-info-card:hover {
+      background: var(--gray-200);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
     .contact-form {
@@ -929,7 +945,7 @@
       .services-grid { grid-template-columns: 1fr; }
       .testimonials-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
-      .contact-info-row { grid-template-columns: 1fr 1fr; }
+      .contact-info-row { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
       .form-row { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
@@ -1260,12 +1276,12 @@
           <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">&#9733;&#9733;&#9733;&#9733;&#9733;<meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5"></div>
           <div class="testimonial-case-type">Family Court &mdash; Custody</div>
           <div class="testimonial-quote">&ldquo;</div>
-          <p itemprop="reviewBody">I was terrified I was going to lose my children. Sam walked into that courtroom in Largo and presented my case with a level of preparation the judge clearly respected. I was awarded full custody, and my kids are safe with me tonight because of him. If you need a family court lawyer in Maryland who actually fights for your family, call Sam.</p>
+          <p itemprop="reviewBody">I was terrified I was going to lose my children. Sam walked into that courtroom in Upper Marlboro and presented my case with a level of preparation the judge clearly respected. I was awarded full custody, and my kids are safe with me tonight because of him. If you need a family court lawyer in Maryland who actually fights for your family, call Sam.</p>
           <div class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
             <div class="testimonial-avatar">T.J.</div>
             <div>
               <div class="testimonial-name" itemprop="name">T. Jackson</div>
-              <div class="testimonial-detail">Family Court &mdash; Custody Case, Largo MD</div>
+              <div class="testimonial-detail">Family Court &mdash; Custody Case, Upper Marlboro MD</div>
             </div>
           </div>
         </div>
@@ -1273,7 +1289,7 @@
           <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">&#9733;&#9733;&#9733;&#9733;&#9733;<meta itemprop="ratingValue" content="5"><meta itemprop="bestRating" content="5"></div>
           <div class="testimonial-case-type">Adult Criminal Court &mdash; Felony</div>
           <div class="testimonial-quote">&ldquo;</div>
-          <p itemprop="reviewBody">I was facing a felony charge that could have ended my career and put me behind bars. Sam&rsquo;s background as a former DOJ employee meant he understood every angle the prosecution would take before they took it. The charges were reduced to a misdemeanor and I avoided prison entirely. He is the criminal defense attorney in Largo, MD you want in your corner when everything is on the line.</p>
+          <p itemprop="reviewBody">I was facing a felony charge that could have ended my career and put me behind bars. Sam&rsquo;s background as a former DOJ employee meant he understood every angle the prosecution would take before they took it. The charges were reduced to a misdemeanor and I avoided prison entirely. He is the criminal defense attorney you want in your corner when everything is on the line.</p>
           <div class="testimonial-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
             <div class="testimonial-avatar">D.M.</div>
             <div>
@@ -1304,7 +1320,7 @@
             <div class="testimonial-avatar">A.C.</div>
             <div>
               <div class="testimonial-name" itemprop="name">A. Carter</div>
-              <div class="testimonial-detail">Family Court &mdash; Protective Order &amp; Divorce, Largo MD</div>
+              <div class="testimonial-detail">Family Court &mdash; Protective Order &amp; Divorce, Upper Marlboro MD</div>
             </div>
           </div>
         </div>
@@ -1363,54 +1379,51 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section contact" id="contact">
+  <section class="section contact" id="contact" itemscope itemtype="https://schema.org/LegalService">
     <div class="container">
       <div class="section-label">Get In Touch</div>
-      <div class="section-title">Contact Us Directly</div>
-      <div class="section-subtitle">Prefer to reach out another way? Send us a message or call the office.</div>
-      <div class="contact-grid">
+      <div class="section-title">Contact Us</div>
+      <div class="section-subtitle">Reach out directly or book a free consultation above.</div>
+      <nav class="contact-grid" aria-label="Contact information">
         <div class="contact-info-row fade-up">
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:5714838940" class="contact-info-card" itemprop="telephone" content="+1-571-483-8940">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div>
               <div class="contact-info-label">Phone</div>
-              <div class="contact-info-value"><a href="tel:5714838940">(571) 483-8940</a></div>
+              <div class="contact-info-value">(571) 483-8940</div>
             </div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="mailto:sam@scalesinjustice.com" class="contact-info-card" itemprop="email" content="sam@scalesinjustice.com">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
             <div>
               <div class="contact-info-label">Email</div>
-              <div class="contact-info-value"><a href="mailto:sam@scalesinjustice.com">sam@scalesinjustice.com</a></div>
+              <div class="contact-info-value">sam@scalesinjustice.com</div>
             </div>
-          </div>
-          <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </a>
+          <div class="contact-info-card" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
               <div class="contact-info-label">Office</div>
-              <div class="contact-info-value">9701 Apollo Drive<br>Largo, MD 20774</div>
+              <div class="contact-info-value"><span itemprop="streetAddress">9701 Apollo Dr</span><br><span itemprop="addressLocality">Largo</span>, <span itemprop="addressRegion">MD</span> <span itemprop="postalCode">20774</span></div>
             </div>
           </div>
           <div class="contact-info-card">
-            <div class="contact-info-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div>
               <div class="contact-info-label">Hours</div>
-              <div class="contact-info-value">Mon &ndash; Fri<br>7:00 AM &ndash; 6:00 PM</div>
+              <div class="contact-info-value"><time itemprop="openingHours" datetime="Mo-Fr 07:00-18:00">Mon&ndash;Fri 7a&ndash;6p</time></div>
             </div>
           </div>
         </div>
-        <div class="fade-up">
-          <div class="calendly-inline-widget" data-url="https://calendly.com/sam-scalesinjustice?background_color=0a1628&text_color=ffffff&primary_color=c9a84c" style="min-width:320px;height:650px;"></div>
-        </div>
-      </div>
+      </nav>
     </div>
   </section>
 
