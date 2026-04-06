@@ -1179,19 +1179,12 @@
         <div class="section-subtitle">Pick a time that works for you. Your consultation is free, confidential, and comes with no obligation.</div>
       </div>
       <div class="cal-wrapper fade-up">
-        <!--
-          CAL.COM SETUP:
-          1. Sign up free at https://cal.com
-          2. Create an event type (e.g. "Free Consultation - 30min")
-          3. Replace YOUR_CALCOM_USERNAME/EVENT below with your actual link
-             Example: sam-scales/free-consultation
-        -->
         <div id="cal-embed" style="width:100%;height:700px;overflow:auto">
           <iframe
-            src="https://cal.com/YOUR_CALCOM_USERNAME/EVENT?embed=true&layout=month_view&theme=dark"
+            src="https://calendly.com/sam-scalesinjustice?background_color=1a1a2e&text_color=ffffff&primary_color=c9a84c"
             frameborder="0"
             allowfullscreen
-            style="width:100%;height:100%;"
+            style="width:100%;height:100%;border-radius:12px;"
           ></iframe>
         </div>
       </div>
@@ -1253,51 +1246,17 @@
           </div>
           <a href="#booking" class="btn btn-primary" style="margin-top:1rem;width:100%;justify-content:center;">Book a Call Instead &rarr;</a>
         </div>
-        <!-- FORM: Replace ACTION URL with your Formspree endpoint (https://formspree.io) or GoDaddy form handler -->
-        <form class="contact-form fade-up" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="hidden" name="_subject" value="New Case Inquiry - Scales Injustice Website">
-          <input type="hidden" name="_next" value="https://scalesinjustice.com/#contact">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" required>
-            </div>
+        <div class="contact-form fade-up" style="min-height:600px;">
+          <div style="width:100%;height:600px;overflow:auto;border-radius:12px;">
+            <iframe
+              src="https://calendly.com/sam-scalesinjustice?background_color=1a1a2e&text_color=ffffff&primary_color=c9a84c"
+              frameborder="0"
+              allowfullscreen
+              style="width:100%;height:100%;"
+            ></iframe>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="caseType">Case Type</label>
-            <select id="caseType" name="caseType">
-              <option value="">Select a practice area...</option>
-              <option value="criminal">Criminal Defense</option>
-              <option value="employment">Federal Employment</option>
-              <option value="regulatory">Regulatory Matters</option>
-              <option value="litigation">Federal Litigation</option>
-              <option value="constitutional">Constitutional Rights</option>
-              <option value="family">Family Law</option>
-              <option value="civil">Civil Litigation</option>
-              <option value="appeals">Appeals</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Tell Us About Your Case</label>
-            <textarea id="message" name="message" placeholder="Briefly describe your situation and how we can help..." required></textarea>
-          </div>
-          <button type="submit" class="form-submit">Send Message &rarr;</button>
-        </form>
+          <a href="#booking" class="btn btn-primary" style="margin-top:1rem;width:100%;justify-content:center;">Book a Call Instead &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
