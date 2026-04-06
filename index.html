@@ -503,6 +503,13 @@
       position: relative;
     }
 
+    .about-image-block img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
     .about-image-block {
       width: 100%;
       aspect-ratio: 4/5;
@@ -1099,7 +1106,9 @@
       <div class="about-grid">
         <div class="about-image fade-up">
           <div class="about-image-block">
-            <svg class="scales-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scales of Justice - Scales in Justice law firm logo">
+            <img src="/sam-scales.jpg" alt="Sam Scales - Criminal Defense Attorney at Scales in Justice, Largo Maryland" loading="lazy">
+            <!-- Original SVG scales illustration replaced with attorney headshot -->
+            <svg class="scales-svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scales of Justice" style="display:none">
               <defs>
                 <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#c9b97a"/>
