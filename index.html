@@ -210,7 +210,7 @@
       --font-body: 'Inter', -apple-system, sans-serif;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
 
     body {
       font-family: var(--font-body);
@@ -218,6 +218,7 @@
       background: var(--white);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
     /* ── NAV ── */
@@ -994,8 +995,9 @@
       .hero-content { grid-template-columns: 1fr; gap: 3rem; }
       .hero-stats { grid-template-columns: repeat(4, 1fr); }
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .about-image { max-width: 400px; }
+      .about-image { max-width: 400px; margin: 0 auto; }
       .footer-inner { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 768px) {
@@ -1015,15 +1017,71 @@
         border-top: 1px solid rgba(255,255,255,0.08);
       }
 
-      .hero-stats { grid-template-columns: 1fr 1fr; }
+      .section { padding: 4rem 1.25rem; }
+      .hero-content { padding: 6rem 1.25rem 4rem; }
+      .hero h1 { font-size: 2.25rem; }
+      .hero-text { font-size: 1rem; }
+      .hero-buttons { flex-direction: column; }
+      .hero-buttons .btn { width: 100%; justify-content: center; }
+      .hero-stats { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .stat-card { padding: 1.25rem; }
+      .stat-number { font-size: 2rem; }
+
+      .about-image { max-width: 280px; margin: 0 auto; }
+      .about-highlights { grid-template-columns: 1fr; }
+
       .services-grid { grid-template-columns: 1fr; }
+      .service-card { padding: 1.5rem; }
+
       .testimonials-grid { grid-template-columns: 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
+      .testimonial-card { padding: 1.5rem; }
+
+      .booking { padding: 4rem 1.25rem; }
+      .cal-wrapper { border: none; }
+      .calendly-inline-widget { height: 550px !important; min-width: 100% !important; }
+
+      .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; }
       .contact-info-row { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-      .form-row { grid-template-columns: 1fr; }
+
+      .cta-banner { padding: 3rem 1.25rem; }
+
+      .footer { padding: 3rem 1.25rem 1.5rem; }
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
       .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
-      .about-highlights { grid-template-columns: 1fr; }
+
+      .form-row { grid-template-columns: 1fr; }
+      .section-title { font-size: 1.75rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content { padding: 5.5rem 1rem 3rem; }
+      .hero h1 { font-size: 1.85rem; }
+      .hero-badge { font-size: 0.65rem; padding: 0.4rem 0.75rem; }
+      .hero-stats { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .stat-card { padding: 1rem; }
+      .stat-number { font-size: 1.6rem; }
+      .stat-label { font-size: 0.7rem; }
+
+      .section { padding: 3rem 1rem; }
+      .section-title { font-size: 1.5rem; }
+      .section-subtitle { font-size: 0.95rem; }
+      .section-label { font-size: 0.65rem; }
+
+      .contact-info-row { grid-template-columns: 1fr; }
+      .contact-info-card { padding: 0.75rem; }
+
+      .nav-inner { padding: 0 1rem; }
+      .nav-logo { font-size: 1.2rem; }
+
+      .testimonial-card { padding: 1.25rem; }
+      .testimonial-card p { font-size: 0.875rem; }
+
+      .calendly-inline-widget { height: 500px !important; }
+
+      .cta-banner { padding: 2.5rem 1rem; }
+      .cta-banner h2 { font-size: 1.4rem; }
+
+      .footer { padding: 2.5rem 1rem 1rem; }
     }
 
     /* ── ANIMATIONS ── */
